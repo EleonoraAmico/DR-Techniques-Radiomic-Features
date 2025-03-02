@@ -330,7 +330,7 @@ def compare_clustering_methods(
     
     return results
 
-# Example usage:
+
 def run_clustering_comparison(data_all, variables_to_analyze, feature_sets):
     """
     Run clustering comparison for multiple feature sets and target variables.
@@ -494,11 +494,11 @@ glszm_features = extract_feature_subset(data_all, feature_type='radiomic', categ
 shape_features = extract_feature_subset(data_all, feature_type='radiomic', category='shape')
 glcm_wavelet_features=extract_feature_subset(data_all, feature_type='radiomic', image_type='wavelet', category='glcm')
 
-#clinical_features = data_all.drop(columns=['SEX'])
+
 variables_to_analyze = ['OS_EVENT', 'SEX', 'PFS_I_EVENT', 'R_ISS']
 variable_to_analyze = ['OS_EVENT', 'PFS_I_EVENT', 'R_ISS', 'SEX']
 # if __name__ == "__main__":
-#     # Example usage for all feature types
+
 feature_sets = {
     'all_dataset':{'data': data_all, 'type': 'all'},
     # 'clinical_features': {'data': clinical_features, 'type': 'clinical'},
